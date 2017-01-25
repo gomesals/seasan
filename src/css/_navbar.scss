@@ -1,0 +1,54 @@
+.navbar{
+	width: 25%;
+	float: left;
+	background-color: $primaryDark;
+	height: 100vh;
+	position: fixed;
+	@include boxShadow(0 1px 3px rgba(0,0,0,0.12), 1px 0 2px rgba(0,0,0,0.24));
+	ul{
+		list-style: none;
+		text-align: right;
+		padding-right: 2em;
+		margin-top: 10em;
+		font-weight: 300;
+		font-size: 0.8em;
+		li{
+			text-transform: uppercase;
+			a{
+				@include appTransition(300ms, color);
+				color: $textWhiteHint;
+				padding: 0 .3em .3em .3em;
+				display: inline-block;
+				margin-top: 2em;
+				width: 90%;
+				&:after{
+					content: "";
+					display: block;
+					height: 2px;
+					padding-right: 3em;
+					background-color: rgba(255,255,255,0.1);
+					margin-top: 0.3em;
+					@include appTransition(300ms, all);
+				}
+				&:hover{
+					color: $textWhiteSecondary;
+					text-decoration: none;
+				}
+				&:active, &:focus{
+					text-decoration: none;
+				}
+				&.active:after{
+					background-color: rgba($accent,0.5);
+				}
+				&.active{
+					color: $accentLight;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $screen-sm-min) {
+	.navbar{
+		display: none;
+	}
+}

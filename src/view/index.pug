@@ -1,0 +1,98 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title Seasan - Foto Arte
+		link(rel="stylesheet", href="css/app.css")
+	body
+		.navbar
+			ul
+				li
+					a(href="#", title="Sobre", data-to="about").active Sobre
+				li
+					a(href="#", title="Serviços", data-to="services") Serviços
+				li
+					a(href="#", title="Quem somos", data-to="team")#toTeam Quem somos
+				li
+					a(href="#", title="Trabalhos", data-to="works") Trabalhos
+				li
+					a(href="#", title="Contato", data-to="contact") Contato
+		#wrapper
+			section#about
+				h1#brand Seasan
+				h2 Onde a qualidade e o comprometimento,<br> se encontram para as melhores fotos.
+				#know Conheça
+			section#services
+				h2.title Serviços
+				p nonformation unwastable degerminator midrash myonosus shakeproof pandemian fatiferous amaga keratosis kelpfish suckler intern spiroid bookmate isoxime dilettanteship sawney alhenna xeroderma clinocephalous epileptoid Tucano rehandicap
+				.desc
+					.item
+						h3 Casamentos
+						p Difflugia hamulate ophidiophobia chondrosteoma beneficeless rima inappreciatively insnarer marshlocks retrievability
+					.item
+						h3 Aniversários
+						p diiambus moit gobiesocid kamao Nascan ochlophobist manstopping macan avine buttonbush
+					.item
+						h3 Bebês
+						p Palapteryx ruffling numberer Vatican protosalt priestess akala downfall exarchal decapodal
+			section#team
+				h2.title Quem somos
+				.desc
+					.item
+						img(src="http://placehold.it/220x220", alt="team").img-responsive
+						.title Dia Gottshall
+						.job Fotógrafa
+					.item
+						img(src="http://placehold.it/220x220", alt="team").img-responsive
+						.title Devora Haggarty
+						.job Fotógrafa
+					.item
+						img(src="http://placehold.it/220x220", alt="team").img-responsive
+						.title Chantal Reagey
+						.job Tratadora de fotos
+			section#works
+				h2.title Trabalhos
+				.desc
+					-var i = 0;
+					while i < 12
+						.item
+							img(src="http://placehold.it/220x220", alt="trabalho").img-responsive
+						-i++
+			section#contact
+				h2.title Contato
+				p unexposable equilucent aerocyst osteophone saturation impotentness faintness fluorbenzene transverser noncollection bullwort singler
+				.info
+					.form
+						form(action="/", method="POST", onsubmit="return false;")
+							.identify
+								.form-group
+									label(for="name") Nome
+									input(type="text")#name.form-control
+								.form-group
+									label(for="email") E-mail
+									input(type="email")#email.form-control
+							.form-group
+								label(for="msg") Mensagem
+								textarea#msg.form-control
+							.form-group
+								button(type="submit").btn.btn-primary.pull-right Enviar mensagem
+					.address
+						ul
+							li
+								h3 Endereço
+								div Rua das Palmeiras, 145 <br> São Paulo, SP - 99999-000
+							li
+								h3 E-mail
+								div 
+									a(href="#", title="falecom@seasan.com") falecom@seasan.com
+							li
+								h3 Telefone
+								div (11) 99999-9999
+			footer
+				#copy Seasan © Todos os direitos reservados - 2017
+				.pull-right
+					a(href="http://silvalexandre.com", title="Feito com <3", target="_blank") Feito com &lt;3
+		script(src="https://code.jquery.com/jquery-1.12.4.min.js")
+		script(src="js/app.js")

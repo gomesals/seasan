@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+// Text colors
+$text: rgba(0,0,0,.87);
+$textSecondary: rgba(0,0,0,.54);
+$textHint: rgba(0,0,0,.38);
+$divider: rgba(0,0,0,.12);
+$textWhite: rgba(255,255,255,1);
+$textWhiteSecondary: rgba(255,255,255,.7);
+$textWhiteHint: rgba(255,255,255,.5);
+$dividerWhite: rgba(255,255,255,.12);
+// Brand colors
+$backgroundColor: #f5f5f5;
+$primary: #616161; //700
+$primaryLight: #EEEEEE; //300
+$primaryDark: #212121; //900
+$accent: #FF4081; //A200
+$accentLight: #FF80AB; //A100
+$accentDark: #F50057; //A400
+@import "mixins";
+@import "vendors/bootstrap/variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import 'vendors/bootstrap/bootstrap';
+@import "reset";

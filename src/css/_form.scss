@@ -1,0 +1,38 @@
+#contact{
+	.info{
+		.identify{
+			@inclued make-row();
+			.form-group{
+				@include make-xs-column(12);
+				@include make-sm-column(6);
+				@include make-md-column(6);
+				@include make-lg-column(6);
+			}
+		}
+		form>.form-group{
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+			@include make-lg-column(12);
+		}
+		label{
+			font-size: 0.8em;
+			font-weight: 400;
+			color: $textHint;
+		}
+		input, textarea{
+			background-color: #fff;
+			border: 1px solid darken($backgroundColor, 2%);
+			@include boxShadow(none, true);
+			&:active, &:focus{
+				border-color: $accent;
+			}
+		}
+		textarea{
+			height: 30vh;
+		}
+		button{
+			border-radius: 5px;
+		}
+	}
+}
