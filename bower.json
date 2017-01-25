@@ -1,6 +1,6 @@
 {
-  "name": "default",
-  "description": "",
+  "name": "seasan",
+  "description": "Seasan site",
   "main": "index.js",
   "authors": [
     "Alexandre Silva <contato@silvalexandre.com>"
